@@ -9,7 +9,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-    <nav className="w-full p-2 sticky top-0 z-50 bg-white font-[Alumni Sans Collegiate One]">
+    <nav className="w-full p-2 sticky top-0 z-50 bg-white font-[Montserrat]">
       <div className="flex justify-evenly bg-white w-full items-center">
         <div className="flex items-center justify-between flex-row">
           <div>
@@ -76,7 +76,7 @@ const Navbar = () => {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden justify-between pb-20 absolute top-16 left-0 w-full bg-white text-black flex flex-col items-center border-b border-gray-700">
+        <div className="md:hidden justify-between pb-20 pt-5 mt-5 absolute top-16 left-0 w-full bg-white text-black flex flex-col items-center border-b border-gray-700">
           <div className="relative w-[300px] h-[45px] mt-10">
             <input
               type="text"
@@ -87,7 +87,7 @@ const Navbar = () => {
               <i className="fas fa-search"></i>
             </span>
           </div>
-          <ul className="flex justify-between flex-col gap-22">
+          <ul className="flex justify-between pt-5 flex-col gap-22">
             <li>
               {" "}
               <a className="hover:text-blue-600 no-underline mt-5 ">Home</a>
@@ -108,9 +108,22 @@ const Navbar = () => {
         </div>
       )}
     </nav>
-    
-    <div className="flex w-[100%] justify-evenly bg-[#4B2C7A] space-x-6 text-white
+    <style>
+  {`
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  `}
+</style>
+    <div className="flex w-[100%]  overflow-hidden justify-evenly bg-[#4B2C7A] space-x-6 text-white
        text-sm border-t border-b p-5">
+          <div className="flex marquee md:animate-none md:whitespace-normal w-max space-x-50 text-white text-sm p-5"
+       style={{
+         animation: 'scroll 15s linear infinite',
+         whiteSpace: 'nowrap',
+       }}
+  >
         <a
           href="#"
           className="flex items-center space-x-1 hover:text-yellow-500"
@@ -146,6 +159,7 @@ const Navbar = () => {
           <i className="fas fa-heart"></i>
           <span className="">Pendants</span>
         </a>
+      </div>
       </div>
       </>
      

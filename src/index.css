@@ -14,3 +14,13 @@
     box-sizing: border-box;
 }
 @import '@fortawesome/fontawesome-free/css/all.min.css';
+/* index.css */
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee {
+  animation: scroll 15s linear infinite;
+  white-space: nowrap;
+}

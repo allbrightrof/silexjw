@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./fonts/SF-Pro-Display-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    font-family: 'SF Pro Display', sans-serif;
+  }  
+*{
+    /* margin:0; */
+    /* padding:0; */
+    box-sizing: border-box;
+}
+@import '@fortawesome/fontawesome-free/css/all.min.css';

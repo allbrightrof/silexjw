@@ -30,35 +30,35 @@ const Navbar = () => {
           <ul className="flex flex-col md:flex-row justify-between gap-22">
             <li>
               {" "}
-              <a className="hover:text-blue-600 no-underline ">Home</a>
+              <a className="hover:text-blue-600 transition-transform no-underline hover:scale-110 duration-300">Home</a>
             </li>
             <li>
-              <a className="hover:text-blue-600 no-underline ">About</a>{" "}
+              <a className="hover:text-blue-600 no-underline hover:scale-110 transition-transform duration-300 ">About</a>{" "}
             </li>
             <li>
               {" "}
-              <a className="hover:text-blue-600 no-underline">
+              <a className="hover:text-blue-600 no-underline hover:scale-110  transition-transform duration-300">
                 Contact Us
               </a>{" "}
             </li>
             <li>
-              <a className="hover:text-blue-600 no-underline">Blog</a>
+              <a className="hover:text-blue-600 no-underline hover:scale-110 transition-transform duration-300">Blog</a>
             </li>
           </ul>
           <div className="flex justify-between flex-row gap-6">
-            <span>
+            <span className="hover:scale-110 transition-transform duration-300">
               <FontAwesomeIcon
                 icon={farHeart}
                 className="text-xl text-gray-700"
               />
             </span>
-            <span>
+            <span className="hover:scale-110 transition-transform duration-300">
               <FontAwesomeIcon
                 icon={faShoppingCart}
                 className="text-xl text-gray-700"
               />
             </span>
-            <span>
+            <span className="hover:scale-110 transition-transform duration-300">
               <FontAwesomeIcon
                 icon={faUser}
                 className="text-xl text-gray-700"
@@ -76,7 +76,7 @@ const Navbar = () => {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden justify-between pb-20 pt-5 mt-5 absolute top-16 left-0 w-full bg-white text-black flex flex-col items-center border-b border-gray-700">
+        <div className="md:hidden justify-between pb-20 pt-10 mt-5 absolute top-16 left-0 w-full bg-white text-black flex flex-col items-center border-b border-gray-700">
           <div className="relative w-[300px] h-[45px] mt-10">
             <input
               type="text"
@@ -87,7 +87,7 @@ const Navbar = () => {
               <i className="fas fa-search"></i>
             </span>
           </div>
-          <ul className="flex justify-between pt-5 flex-col gap-22">
+          <ul className="flex justify-between pt-24 flex-col gap-22">
             <li>
               {" "}
               <a className="hover:text-blue-600 no-underline mt-5 ">Home</a>

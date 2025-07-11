@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex justify-evenly bg-white w-full items-center">
         <div className="flex items-center justify-between flex-row">
           <div>
-            <img src="/Picture_1-removebg-preview 2.png" />
+            <img src="./bio-log.png"/>
           </div>
           <div className="hidden md:flex relative w-[300px] h-[45px]">
             <input
